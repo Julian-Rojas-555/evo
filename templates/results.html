@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Resultados</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/results.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="/">
+
+<div class="logo">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}">
+
+<h2>Evo Fitsor</h2>
+
+</div>
+
+</a>
+
+</header>
+
+<div class="results-container">
+
+<div class="result-card">
+
+<h2>Dieta</h2>
+
+<pre>{{ dieta }}</pre>
+
+</div>
+
+<div class="result-card">
+
+<h2>Rutina</h2>
+
+<pre>{{ rutina }}</pre>
+
+</div>
+
+</div>
+
+</body>
+</html>
